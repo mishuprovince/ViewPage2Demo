@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="横向滑动"
+        app:layout_constraintBottom_toTopOf="@+id/btn_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="纵向滑动"
+        app:layout_constraintBottom_toTopOf="@+id/btn_radio"
+        app:layout_constraintEnd_toEndOf="@+id/btn_horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/btn_horizontal" />
+
+    <Button
+        android:id="@+id/btn_radio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="RadioGroup与vp连用"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tab"
+        app:layout_constraintEnd_toEndOf="@+id/btn_vertical"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/btn_vertical" />
+
+    <Button
+        android:id="@+id/btn_tab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="tablayout与vp连用"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_radio"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_radio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_radio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
